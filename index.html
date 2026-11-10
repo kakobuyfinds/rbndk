@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#10234d">
+  <title>MyCNBox spreadsheet | Productlinks, maten en QC-foto’s</title>
+  <meta name="description" content="Gebruik deze MyCNBox spreadsheet-gids om productlinks te vergelijken, de juiste maat te kiezen en QC-foto’s en verzendkosten te controleren.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MyCNBox spreadsheet | Productlinks, maten en QC-foto’s">
+  <meta property="og:description" content="Verken tien productcategorieën en vergelijk maten, magazijnfoto’s en verzendkosten voordat je bestelt.">
+  <meta property="og:image" content="https://limitedresell.com/915-marketplace_1500/air-max-1-anniversary-red.jpg">
+  <meta property="og:image:alt" content="Nike Air Max 1 Anniversary Red met rode Swoosh en zichtbare Air-unit">
+  <link rel="preconnect" href="https://limitedresell.com">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%2310234d'/%3E%3Cpath d='M13 13v22m22-22v22M13 24h22' stroke='%23efff65' stroke-width='5'/%3E%3C/svg%3E">
+  <!-- Brononderzoek: de eerste Google-resultatenpagina was niet verifieerbaar. De zoekintentie is afgeleid uit tien andere relevante webresultaten. -->
+  <style>
+    :root{color-scheme:light;--navy:#10234d;--blue:#173c83;--ink:#172744;--muted:#475670;--line:#c8d4e8;--ground:#eaf0f9;--paper:#fff;--lime:#efff65}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--ground);color:var(--ink);font:1rem/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.12;text-wrap:balance}
+    h1{font-size:clamp(2.25rem,6vw,5.15rem);letter-spacing:-.055em;overflow-wrap:anywhere}
+    h2{font-size:clamp(1.65rem,3.5vw,2.7rem);letter-spacing:-.035em}
+    h3{font-size:1.18rem}
+    p{max-width:70ch}
+    a{color:inherit;text-underline-offset:.2em}
+    a:focus-visible,summary:focus-visible{outline:3px solid #1a62d1;outline-offset:3px}
+    .mast a:focus-visible,.hero a:focus-visible{outline-color:var(--lime)}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    .mast,.foot{background:var(--navy);color:var(--paper)}
+    .mast .wrap,.foot .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem 1rem;padding-block:.9rem}
+    .brand{font-weight:800}
+    .label{font-size:.75rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+    .mast .label{color:var(--lime)}
+    .directory{padding-block:1rem 1.25rem}
+    .directory h2{font-size:1rem;letter-spacing:0}
+    .directory ul{list-style:none;margin:.6rem 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.35rem}
+    .directory a{display:flex;align-items:center;gap:.45rem;min-height:2.85rem;padding:.4rem .6rem;border:1px solid var(--line);background:var(--paper);font-size:.9rem;font-weight:750;text-decoration:none;overflow-wrap:anywhere}
+    .directory a:hover{border-color:var(--blue);text-decoration:underline}
+    .directory span{color:var(--blue);font:700 .72rem/1 ui-monospace,monospace}
+    .hero{display:grid;grid-template-columns:1.18fr 1fr;background:var(--navy);color:var(--paper)}
+    .intro{padding:clamp(1.25rem,5vw,3.7rem);align-content:center}
+    .intro .label{color:var(--lime);margin-bottom:.65rem}
+    .intro p:not(.label){margin-top:1rem;color:#e3ebfc}
+    .button{display:inline-flex;align-items:center;min-height:2.8rem;margin-top:1.15rem;padding:.4rem .85rem;background:var(--lime);color:var(--navy);font-weight:800}
+    .hero figure{display:grid;align-content:center;background:#fff;color:var(--ink);padding:.65rem}
+    .hero img{display:block;width:100%;height:auto;max-height:350px;object-fit:contain}
+    figcaption{padding:.5rem .65rem;color:var(--muted);font-size:.84rem}
+    .hero figcaption{text-align:center}
+    .section{margin-block:clamp(2rem,5vw,3.6rem)}
+    .section h2{margin-bottom:.7rem}
+    .section .lead{color:var(--muted);margin-bottom:.85rem}
+    .guides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem}
+    .guides article{padding:1rem;background:var(--paper);border-top:4px solid var(--blue)}
+    .guides .label{color:var(--blue);margin-bottom:.55rem}
+    .guides h3{margin-bottom:.55rem}
+    .guides p+p{margin-top:.7rem}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem}
+    .gallery figure{min-width:0;background:var(--paper);border:1px solid var(--line)}
+    .gallery img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+    .faq{display:grid;grid-template-columns:.72fr 1.28fr;gap:1rem;border-top:1px solid var(--line);padding-top:1.25rem}
+    .faq details{border-bottom:1px solid var(--line);padding:.7rem 0}
+    .faq summary{cursor:pointer;font-weight:750}
+    .faq details p{margin-top:.45rem}
+    .foot p{font-size:.88rem;color:#e3ebfc}
+    @media(max-width:56rem){.directory ul{grid-template-columns:repeat(3,minmax(0,1fr))}.guides{grid-template-columns:1fr}}
+    @media(max-width:42rem){.directory ul,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.hero,.faq{grid-template-columns:1fr}.hero img{max-height:260px}.faq{gap:0}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "inLanguage":"nl",
+    "name":"MyCNBox spreadsheet | Productlinks, maten en QC-foto’s",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Wat is een MyCNBox spreadsheet?",
+        "acceptedAnswer":{"@type":"Answer","text":"Een MyCNBox spreadsheet is een overzicht waarmee je productlinks kunt bewaren en vergelijken voordat je iets bestelt. Deze Nederlandstalige gids gebruikt categorieën en controlepunten om je te helpen bij die vergelijking."}
+      },
+      {
+        "@type":"Question",
+        "name":"Hoe controleer ik een productlink uit een spreadsheet?",
+        "acceptedAnswer":{"@type":"Answer","text":"Open de oorspronkelijke advertentie en vergelijk het artikelnummer, de verkoper en de gekozen maat en kleur. Controleer bij een Weidian-, Taobao- of 1688-link ook of de gewenste uitvoering nog selecteerbaar is."}
+      },
+      {
+        "@type":"Question",
+        "name":"Wat kun je aflezen uit MyCNBox QC-foto’s?",
+        "acceptedAnswer":{"@type":"Answer","text":"Magazijnfoto’s kunnen kleur, labels, zichtbare beschadigingen en afmetingen met een meetlint laten zien. Voor de herkomst of echtheid van een merkartikel heb je apart bewijs nodig."}
+      },
+      {
+        "@type":"Question",
+        "name":"Hoe vergelijk ik verzendkosten voor Nederland of België?",
+        "acceptedAnswer":{"@type":"Answer","text":"Gebruik bij elke offerte dezelfde bestemming, pakketafmetingen en hetzelfde gewicht. Controleer of de route op werkelijk gewicht of volumegewicht rekent en welke belastingen, inklaringskosten en verzekeringen in de prijs zitten."}
+      },
+      {
+        "@type":"Question",
+        "name":"Waar kom ik terecht als ik een categorie open?",
+        "acceptedAnswer":{"@type":"Answer","text":"De categorieknoppen openen de bijbehorende cataloguspagina op hipobuyfind.com. Deze gids is onafhankelijk van MyCNBox en de afgebeelde merken."}
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/rbndk/">
+</head>
+<body>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+      <span class="label">Nederlandstalige productgids</span>
+    </div>
+  </header>
+  <nav class="wrap directory" aria-labelledby="categories">
+    <h2 id="categories">Blader op categorie</h2>
+    <ul>
+      <li><a href="https://hipobuyfind.com/category-911-Shoes.html"><span aria-hidden="true">01</span> Schoenen</a></li>
+      <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html"><span aria-hidden="true">02</span> Hoodies en truien</a></li>
+      <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html"><span aria-hidden="true">03</span> T-shirts</a></li>
+      <li><a href="https://hipobuyfind.com/category-914-Jackets.html"><span aria-hidden="true">04</span> Jassen</a></li>
+      <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html"><span aria-hidden="true">05</span> Broeken en shorts</a></li>
+      <li><a href="https://hipobuyfind.com/category-916-Headwear.html"><span aria-hidden="true">06</span> Petten en mutsen</a></li>
+      <li><a href="https://hipobuyfind.com/category-917-Sets.html"><span aria-hidden="true">07</span> Sets</a></li>
+      <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html"><span aria-hidden="true">08</span> Ondergoed</a></li>
+      <li><a href="https://hipobuyfind.com/category-919-Jersey.html"><span aria-hidden="true">09</span> Sportshirts</a></li>
+      <li><a href="https://hipobuyfind.com/category-920-Accessories.html"><span aria-hidden="true">10</span> Accessoires</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div class="intro">
+        <p class="label">Van advertentie tot shortlist</p>
+        <h1 id="title">MyCNBox spreadsheet</h1>
+        <p>Bewaar bij elke productlink de gewenste uitvoering, de gemeten maat en een schatting van de totale kosten. Zo kun je twee vergelijkbare artikelen naast elkaar leggen voordat je kiest.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Bekijk de catalogus <span aria-hidden="true">&nbsp;↗</span></a>
+      </div>
+      <figure>
+        <img src="https://limitedresell.com/915-large_default/air-max-1-anniversary-red.jpg" width="445" height="445" fetchpriority="high" loading="eager" alt="Nike Air Max 1 Anniversary Red met rode Swoosh en zichtbare Air-unit">
+        <figcaption>Nike Air Max 1 Anniversary Red · modelvoorbeeld</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="guides">
+      <h2 id="guides">MyCNBox koopgids</h2>
+      <p class="lead">Drie korte artikelen over productlinks, controlefoto’s en verzendoffertes.</p>
+      <div class="guides">
+        <article>
+          <p class="label">01 / Kiezen</p>
+          <h3>MyCNBox productlinks vergelijken</h3>
+          <p>Noteer de oorspronkelijke advertentie, het artikelnummer, de verkoper en de gekozen kleurvariant. Leg bij sneakers de gemeten binnenzoollengte naast de sneakermaattabel in centimeters. Meet een eigen hoodie plat op en vergelijk borstbreedte, ruglengte en mouwlengte met de maattabel van de verkoper.</p>
+          <p>Bij een kledingset vergelijk je de maten van beide stukken. Vraag bij een pet naar de hoofdomtrek en controleer bij een armband de binnenomtrek en het type sluiting.</p>
+        </article>
+        <article>
+          <p class="label">02 / Controleren</p>
+          <h3>MyCNBox QC-foto’s beoordelen</h3>
+          <p>Vraag bij schoenen om foto’s van beide neuzen, het hielstuk, het maatlabel en de buitenzool. Een scherpe detailfoto van de stiksels of rits helpt bij jassen. Bij een ketting kun je om een foto van de sluiting en een meting van de draaglengte vragen.</p>
+          <p>Bekijk de magazijnfoto’s van jouw eigen artikel. Sla de bestelreferentie op en kijk vóór verzending welke ruil- of retourtermijn de verkoper hanteert.</p>
+        </article>
+        <article>
+          <p class="label">03 / Verzenden</p>
+          <h3>MyCNBox verzending begroten</h3>
+          <p>Splits je kostenraming op in artikelprijs, binnenlandse verzending, eventuele servicekosten en internationaal vervoer. Noteer bij het omrekenen van CNY naar euro de gebruikte wisselkoers. Controleer bij verzending naar Nederland of België welke invoer- en afhandelingskosten bij de offerte zijn inbegrepen.</p>
+          <p>Vergelijk bij het samenvoegen van pakketten het uiteindelijke gewicht, de pakketafmetingen, de verzekeringsdekking en de mogelijkheden voor pakkettracking.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="gallery">
+      <h2 id="gallery">Van pasvorm tot afwerking</h2>
+      <p class="lead">Deze merkbeelden illustreren details die je ook op je eigen controlefoto’s kunt bekijken. Voorraad en uitvoeringen vind je bij de betreffende aanbieder.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1727799308/768444_XJG2X_1160_005_100_0000_Light-Cotton-Jersey-Hooded-Sweatshirt-with-Web.jpg" width="490" height="490" loading="lazy" decoding="async" alt="Model in een lichtgrijze Gucci-hoodie met groen-rode strepen langs de schouders">
+          <figcaption>Gucci · bekijk schoudernaad en boord</figcaption>
+        </figure>
+        <figure>
+          <img src="https://sg.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton--M5381L_PM2_Front%20view.jpg?hei=440&amp;wid=380" width="380" height="440" loading="lazy" decoding="async" alt="Vooraanzicht van een Louis Vuitton Monogram Essential-pet">
+          <figcaption>Louis Vuitton · bekijk klep en panelen</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.oliverjewellery.ca/cdn/shop/files/Hermes-Palladium-Plated-Orange-Enamel-Clic-H-Bracelet-w-Box_f80dab0b.jpg?v=1744110722&amp;width=480" width="480" height="480" loading="lazy" decoding="async" alt="Oranje Hermès Clic H-armband met zilverkleurige H-sluiting">
+          <figcaption>Hermès · bekijk emaille en sluiting</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/N1155PMTCYD301_SBG_E09-1?%24r9x10_raw%24=&amp;bfc=on&amp;crop=0%2C0%2C4000%2C5000&amp;hei=540&amp;qlt=80&amp;scale=1&amp;wid=500" width="500" height="540" loading="lazy" decoding="async" alt="Goudkleurige dubbele Dior Petit CD-ketting met kristallen">
+          <figcaption>Dior · bekijk schakels en hangers</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section faq" aria-labelledby="faq">
+      <div>
+        <h2 id="faq">Veelgestelde vragen</h2>
+        <p class="lead">Over de spreadsheet en de catalogus.</p>
+      </div>
+      <div>
+        <details open>
+          <summary>Wat is een MyCNBox spreadsheet?</summary>
+          <p>Een MyCNBox spreadsheet is een overzicht waarmee je productlinks kunt bewaren en vergelijken voordat je iets bestelt. Deze Nederlandstalige gids gebruikt categorieën en controlepunten om je te helpen bij die vergelijking.</p>
+        </details>
+        <details>
+          <summary>Hoe controleer ik een productlink uit een spreadsheet?</summary>
+          <p>Open de oorspronkelijke advertentie en vergelijk het artikelnummer, de verkoper en de gekozen maat en kleur. Controleer bij een Weidian-, Taobao- of 1688-link ook of de gewenste uitvoering nog selecteerbaar is.</p>
+        </details>
+        <details>
+          <summary>Wat kun je aflezen uit MyCNBox QC-foto’s?</summary>
+          <p>Magazijnfoto’s kunnen kleur, labels, zichtbare beschadigingen en afmetingen met een meetlint laten zien. Voor de herkomst of echtheid van een merkartikel heb je apart bewijs nodig.</p>
+        </details>
+        <details>
+          <summary>Hoe vergelijk ik verzendkosten voor Nederland of België?</summary>
+          <p>Gebruik bij elke offerte dezelfde bestemming, pakketafmetingen en hetzelfde gewicht. Controleer of de route op werkelijk gewicht of volumegewicht rekent en welke belastingen, inklaringskosten en verzekeringen in de prijs zitten.</p>
+        </details>
+        <details>
+          <summary>Waar kom ik terecht als ik een categorie open?</summary>
+          <p>De categorieknoppen openen de bijbehorende cataloguspagina op hipobuyfind.com. Deze gids is onafhankelijk van MyCNBox en de afgebeelde merken.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <a class="brand" href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+      <p>Onafhankelijke koopgids voor het vergelijken van productinformatie.</p>
+    </div>
+  </footer>
+</body>
+</html>
